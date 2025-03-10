@@ -1,0 +1,31 @@
+{
+    "fieldsDefinition": {
+        "id": {
+            "type": "INTEGER",
+            "autoIncrement": true,
+            "primaryKey": true
+        },
+        "module": {
+            "type": "STRING"
+        },
+        "create": {
+            "type": "BOOLEAN"
+        }
+        ,
+        "read": {
+            "type": "BOOLEAN"
+        },
+        "update": {
+            "type": "BOOLEAN"
+        },
+        "delete": {
+            "type": "BOOLEAN"
+        }
+    },
+    "associations": [
+        {
+            "relationType": "belongsTo",
+            "relationModel": "Client"
+        }
+    ]
+}

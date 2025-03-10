@@ -1,0 +1,23 @@
+{
+    "fieldsDefinition": {
+        "id": {
+            "type": "INTEGER",
+            "autoIncrement": true,
+            "primaryKey": true
+        },
+        "AuthorizationKey": {
+            "type": "STRING"
+        }
+    },
+    "associations": [
+        {
+            "relationType": "hasOne",
+            "relationModel": "ClientCredential"
+        },
+        {
+            "relationType": "hasMany",
+            "relationModel": "ClientPermission"
+        }
+    ],
+    "accessibleViaRest": true
+}
