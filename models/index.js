@@ -58,7 +58,7 @@ for(let rawModel of rawModelObj) {
     }
 }
 
-//Define Associations
+//adding Associations
 for(const rawModel of rawModelObj) {
     try {
             let {modelName, modelData} = rawModel

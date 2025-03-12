@@ -5,24 +5,33 @@
             "autoIncrement": true,
             "primaryKey": true
         },
-        "name": {
+        "title": {
             "type": "STRING"
         },
-        "phone": {
+        "state": {
             "type": "STRING"
         },
-        "address": {
-            "type": "STRING"
+        "prePayment": {
+            "type": "NUMBER"
+        },
+        "payment": {
+            "type": "NUMBER"
+        },
+        "start": {
+            "type": "DATE"
+        },
+        "end": {
+            "type": "DATE"
         }
     },
     "associations": [
         {
             "relationType": "hasOne",
-            "relationModel": "ClientCredential"
+            "relationModel": "Client"
         },
         {
             "relationType": "hasMany",
-            "relationModel": "ClientPermission"
+            "relationModel": "ReservationDetails"
         }
     ],
     "getterFunctions":[],

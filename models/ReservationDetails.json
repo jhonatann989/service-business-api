@@ -5,27 +5,14 @@
             "autoIncrement": true,
             "primaryKey": true
         },
-        "module": {
+        "detail": {
             "type": "STRING"
-        },
-        "create": {
-            "type": "BOOLEAN"
-        }
-        ,
-        "read": {
-            "type": "BOOLEAN"
-        },
-        "update": {
-            "type": "BOOLEAN"
-        },
-        "delete": {
-            "type": "BOOLEAN"
         }
     },
     "associations": [
         {
             "relationType": "belongsTo",
-            "relationModel": "Client"
+            "relationModel": "Reservation"
         }
     ],
     "getterFunctions":[],

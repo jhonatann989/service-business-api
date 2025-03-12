@@ -131,9 +131,39 @@
         "required": ["relationType", "relationModel"]
       }
     },
+    "getterFunction":{
+      "type": "array",
+      "properties": {
+          "propertyName": {
+            "type": "string"
+          },
+          "functionName":{
+            "type":"string"
+          }
+        },
+        "required": ["propertyName", "functionName"]
+    },
+    "setterFunction":{
+      "type": "array",
+      "properties": {
+          "propertyName": {
+            "type": "string"
+          },
+          "functionName":{
+            "type":"string"
+          }
+        },
+        "required": ["propertyName", "functionName"]
+    },
     "accessibleViaRest": {
       "type": "boolean"
     }
   },
-  "required": ["fieldsDefinition","associations","accessibleViaRest"]
+  "required": [
+    "fieldsDefinition",
+    "associations",
+    "getterFunction",
+    "setterFunction",
+    "accessibleViaRest"
+  ]
 }
