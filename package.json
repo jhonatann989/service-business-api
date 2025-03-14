@@ -5,6 +5,7 @@
   "scripts": {
     "start-dev": "node --watch app.js"
   },
+  "type": "module",
   "author": "Jhonatan Morales",
   "license": "ISC",
   "description": "",
